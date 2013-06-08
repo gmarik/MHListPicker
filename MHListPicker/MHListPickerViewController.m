@@ -34,7 +34,7 @@
 
     NSMutableArray * selection = [[NSMutableArray alloc] initWithCapacity: capacity];
 
-    for (int i=0; i<ids.count; i+=1) {
+    for (int i=0; i < ids.count; i+=1) {
         [selection setObject:[NSNumber numberWithBool:YES] atIndexedSubscript:i];
     }
 
@@ -65,7 +65,8 @@
     cell.selectionStyle = UITableViewCellStyleDefault;
     cell.textLabel.text = [_entries[indexPath.row] lastObject];
 
-    if (YES == [_selection[indexPath.row] boolValue]) {
+    //mutable arrays expand as needed 
+    if (indexPath.row < _selection.count && YES == [_selection[indexPath.row] boolValue]) {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
     }
 

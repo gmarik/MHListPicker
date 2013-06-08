@@ -9,6 +9,7 @@
 #import "MHAppDelegate.h"
 
 #import "MHListPickerViewController.h"
+#import "NSDateFormatter+ListPickerEntries.h"
 
 @implementation MHAppDelegate
 
@@ -16,7 +17,11 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.rootViewController = [[MHListPickerViewController alloc] initWithEntries:@[@[@1, @"Sunday"]] withSelectedIds:@[@1] andMultiselectable:YES];
+
+    NSArray *entries = [[[NSDateFormatter alloc] init] weekdaySymbolsForPicker];
+
+    
+    self.window.rootViewController = [[MHListPickerViewController alloc] initWithEntries:entries withSelectedIds:@[@1] andMultiselectable:YES];
     [self.window makeKeyAndVisible];
     return YES;
 }
