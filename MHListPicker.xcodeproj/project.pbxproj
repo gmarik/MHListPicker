@@ -19,6 +19,7 @@
 		9BE523BB1763BE7F00642028 /* MHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BE523BA1763BE7F00642028 /* MHViewController.m */; };
 		9BE523BE1763BE7F00642028 /* MHViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BE523BC1763BE7F00642028 /* MHViewController_iPhone.xib */; };
 		9BE523C11763BE7F00642028 /* MHViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BE523BF1763BE7F00642028 /* MHViewController_iPad.xib */; };
+		9BE523C91763BF0500642028 /* MHListPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BE523C81763BF0500642028 /* MHListPickerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		9BE523BA1763BE7F00642028 /* MHViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHViewController.m; sourceTree = "<group>"; };
 		9BE523BD1763BE7F00642028 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MHViewController_iPhone.xib; sourceTree = "<group>"; };
 		9BE523C01763BE7F00642028 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MHViewController_iPad.xib; sourceTree = "<group>"; };
+		9BE523C71763BF0500642028 /* MHListPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHListPickerViewController.h; sourceTree = "<group>"; };
+		9BE523C81763BF0500642028 /* MHListPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHListPickerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,8 @@
 			children = (
 				9BE523B01763BE7F00642028 /* MHAppDelegate.h */,
 				9BE523B11763BE7F00642028 /* MHAppDelegate.m */,
+				9BE523C71763BF0500642028 /* MHListPickerViewController.h */,
+				9BE523C81763BF0500642028 /* MHListPickerViewController.m */,
 				9BE523B91763BE7F00642028 /* MHViewController.h */,
 				9BE523BA1763BE7F00642028 /* MHViewController.m */,
 				9BE523BC1763BE7F00642028 /* MHViewController_iPhone.xib */,
@@ -181,6 +186,7 @@
 				9BE523AE1763BE7F00642028 /* main.m in Sources */,
 				9BE523B21763BE7F00642028 /* MHAppDelegate.m in Sources */,
 				9BE523BB1763BE7F00642028 /* MHViewController.m in Sources */,
+				9BE523C91763BF0500642028 /* MHListPickerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

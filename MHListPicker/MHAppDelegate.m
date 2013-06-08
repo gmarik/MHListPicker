@@ -9,6 +9,7 @@
 #import "MHAppDelegate.h"
 
 #import "MHViewController.h"
+#import "MHListPickerViewController.h"
 
 @implementation MHAppDelegate
 
@@ -16,12 +17,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        self.viewController = [[MHViewController alloc] initWithNibName:@"MHViewController_iPhone" bundle:nil];
-    } else {
-        self.viewController = [[MHViewController alloc] initWithNibName:@"MHViewController_iPad" bundle:nil];
-    }
-    self.window.rootViewController = self.viewController;
+    self.window.rootViewController = [[MHListPickerViewController alloc] initWithEntries:@[@[@1, @"Sunday"]] withSelectedIds:@[@1] andMultiselectable:YES];
     [self.window makeKeyAndVisible];
     return YES;
 }
