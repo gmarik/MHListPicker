@@ -8,7 +8,6 @@
 
 #import "MHAppDelegate.h"
 
-#import "MHViewController.h"
 #import "MHListPickerViewController.h"
 
 @implementation MHAppDelegate
