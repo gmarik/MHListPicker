@@ -11,7 +11,7 @@
 @interface MHListPickerViewController : UITableViewController
 {
     // is a list of @[id, Label] pairs
-    NSMutableDictionary *_selection;
+    NSMutableSet *_selection;
     NSArray *_entries;
     BOOL    _multiselect;
 

@@ -55,7 +55,7 @@
     cell.selectionStyle = UITableViewCellStyleDefault;
     cell.textLabel.text = [self titleForRow:indexPath.row];
 
-    BOOL selected = [[_selection objectForKey: [self idForRow:indexPath.row ] ] boolValue];
+    BOOL selected = [_selection containsObject: [self idForRow:indexPath.row ]];
 
     if (selected) {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
@@ -72,9 +72,15 @@
 
     BOOL selected = (UITableViewCellAccessoryCheckmark == cell.accessoryType);
 
-    cell.accessoryType = selected ? UITableViewCellAccessoryNone : UITableViewCellAccessoryCheckmark;
+    NSString *entry_id = [self idForRow:indexPath.row];
 
-    [_selection setValue:[NSNumber numberWithBool:!selected] forKey:[self idForRow:indexPath.row]];
+    if (selected) {
+        [_selection removeObject:entry_id];
+    } else {
+        [_selection addObject:entry_id];
+    }
+    
+    cell.accessoryType = selected ? UITableViewCellAccessoryNone : UITableViewCellAccessoryCheckmark;
 }
 
 #pragma mark helpers
@@ -89,13 +95,13 @@
     return entry_title;
 }
 
--(NSMutableDictionary *)selectionFromIds:(NSArray *) ids withCapacity:(NSUInteger) capacity{
+-(NSMutableSet *)selectionFromIds:(NSArray *) ids withCapacity:(NSUInteger) capacity{
 
-    NSMutableDictionary *s = [[NSMutableDictionary alloc] init];
+    NSMutableSet *s = [[NSMutableSet alloc] init];
 
     for (NSUInteger i=0; i < ids.count; i+=1) {
         NSString *entry_id = [ids[i] description];
-        [s setValue:[NSNumber numberWithBool: YES] forKey: entry_id];
+        [s addObject:entry_id];
     }
 
     return s;
