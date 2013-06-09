@@ -89,12 +89,12 @@
 }
 
 -(NSString*)idForRow:(NSInteger)row {
-    NSString *entry_id = [[_entries[row] objectAtIndex:0] description];
+    NSString *entry_id = [[_entries[row] lastObject] description];
     return entry_id;
 }
 
 -(NSString*)titleForRow:(NSInteger)row {
-    NSString *entry_title = [_entries[row] lastObject];
+    NSString *entry_title = [_entries[row] objectAtIndex:0];
     return entry_title;
 }
 

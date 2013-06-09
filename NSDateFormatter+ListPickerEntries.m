@@ -24,7 +24,7 @@
 
     for (int i = 0; i < symbols.count; i += 1) {
         id item = [symbols objectAtIndex: i];
-        [entries addObject:@[@(i+1), item]];
+        [entries addObject:@[item, @(i+1)]];
     }
 
     return entries;
