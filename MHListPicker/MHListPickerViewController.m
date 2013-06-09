@@ -30,6 +30,17 @@
     return self;
 }
 
+-(NSArray *)selection {
+
+    NSMutableArray *selected_entries = [[NSMutableArray alloc] init];
+    for (int i = 0; i < _entries.count; i += 1) {
+        NSString *entry_id = [self idForRow:i];
+        if ([_selection containsObject:entry_id]) {
+            [selected_entries addObject: _entries[i]];
+        }
+    }
+    return selected_entries;
+}
 
 #pragma mark - Table view data source
 
@@ -81,6 +92,8 @@
     }
     
     cell.accessoryType = selected ? UITableViewCellAccessoryNone : UITableViewCellAccessoryCheckmark;
+
+//    NSLog(@"%@", [self selection]);
 }
 
 #pragma mark helpers

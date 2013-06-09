@@ -22,6 +22,6 @@
   andMultiselectable:(BOOL)multi
         ;
 
-//-(NSArray *)selection;
+-(NSArray *)selection;
 
 @end
