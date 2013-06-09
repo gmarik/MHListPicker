@@ -63,14 +63,10 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
     }
 
-    NSArray *pair = _entries[indexPath.row];
-    NSString *entry_title = [pair lastObject];
-    NSString *entry_id = [[pair objectAtIndex:0] description];
-
     cell.selectionStyle = UITableViewCellStyleDefault;
-    cell.textLabel.text = entry_title;
+    cell.textLabel.text = [self titleForRow:indexPath.row];
 
-    BOOL selected = [[_selection objectForKey: entry_id ] boolValue];
+    BOOL selected = [[_selection objectForKey: [self idForRow:indexPath.row ] ] boolValue];
 
     if (selected) {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
@@ -89,10 +85,17 @@
 
     cell.accessoryType = selected ? UITableViewCellAccessoryNone : UITableViewCellAccessoryCheckmark;
 
-    NSArray *pair = _entries[indexPath.row];
-    NSString *entry_id = [[pair objectAtIndex:0] description];
+    [_selection setValue:[NSNumber numberWithBool:!selected] forKey:[self idForRow:indexPath.row]];
+}
 
-    [_selection setValue:[NSNumber numberWithBool:!selected] forKey:entry_id];
+-(NSString*)idForRow:(NSInteger)row {
+    NSString *entry_id = [[_entries[row] objectAtIndex:0] description];
+    return entry_id;
+}
+
+-(NSString*)titleForRow:(NSInteger)row {
+    NSString *entry_title = [_entries[row] lastObject];
+    return entry_title;
 }
 
 
