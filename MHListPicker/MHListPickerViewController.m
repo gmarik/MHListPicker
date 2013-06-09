@@ -35,7 +35,8 @@
     NSMutableDictionary *s = [[NSMutableDictionary alloc] init];
 
     for (NSUInteger i=0; i < ids.count; i+=1) {
-        [s setValue:[NSNumber numberWithBool:YES] forKey:[ids objectAtIndex:i]];
+        NSString *entry_id = [ids[i] description];
+        [s setValue:[NSNumber numberWithBool: YES] forKey: entry_id];
     }
 
     return s;
@@ -62,13 +63,16 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
     }
 
-    id key = [_entries[indexPath.row] firstObject];
+    NSArray *pair = _entries[indexPath.row];
+    NSString *entry_title = [pair lastObject];
+    NSString *entry_id = [[pair objectAtIndex:0] description];
 
     cell.selectionStyle = UITableViewCellStyleDefault;
-    cell.textLabel.text = [_entries[indexPath.row] lastObject];
-    cell.tag  = [key integerValue];
+    cell.textLabel.text = entry_title;
 
-    if (YES == [[_selection objectForKey:key] boolValue]) {
+    BOOL selected = [[_selection objectForKey: entry_id ] boolValue];
+
+    if (selected) {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
     }
 
@@ -85,8 +89,10 @@
 
     cell.accessoryType = selected ? UITableViewCellAccessoryNone : UITableViewCellAccessoryCheckmark;
 
-    id key = [NSNumber numberWithInteger:indexPath.row];
-    [_selection setValue:[NSNumber numberWithBool:!selected] forKey: key];
+    NSArray *pair = _entries[indexPath.row];
+    NSString *entry_id = [[pair objectAtIndex:0] description];
+
+    [_selection setValue:[NSNumber numberWithBool:!selected] forKey:entry_id];
 }
 
 
