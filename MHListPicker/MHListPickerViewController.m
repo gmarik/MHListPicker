@@ -30,15 +30,15 @@
     return self;
 }
 
--(NSMutableArray *)selectionFromIds:(NSArray *) ids withCapacity:(NSUInteger) capacity{
+-(NSMutableDictionary *)selectionFromIds:(NSArray *) ids withCapacity:(NSUInteger) capacity{
 
-    NSMutableArray * selection = [[NSMutableArray alloc] initWithCapacity: capacity];
+    NSMutableDictionary *s = [[NSMutableDictionary alloc] init];
 
-    for (int i=0; i < ids.count; i+=1) {
-        [selection setObject:[NSNumber numberWithBool:YES] atIndexedSubscript:i];
+    for (NSUInteger i=0; i < ids.count; i+=1) {
+        [s setValue:[NSNumber numberWithBool:YES] forKey:[ids objectAtIndex:i]];
     }
 
-    return selection;
+    return s;
 }
 
 #pragma mark - Table view data source
@@ -62,11 +62,13 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
     }
 
+    id key = [_entries[indexPath.row] firstObject];
+
     cell.selectionStyle = UITableViewCellStyleDefault;
     cell.textLabel.text = [_entries[indexPath.row] lastObject];
+    cell.tag  = [key integerValue];
 
-    //mutable arrays expand as needed 
-    if (indexPath.row < _selection.count && YES == [_selection[indexPath.row] boolValue]) {
+    if (YES == [[_selection objectForKey:key] boolValue]) {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
     }
 
@@ -83,7 +85,8 @@
 
     cell.accessoryType = selected ? UITableViewCellAccessoryNone : UITableViewCellAccessoryCheckmark;
 
-    [_selection setObject:[NSNumber numberWithBool:!selected] atIndexedSubscript: indexPath.row ];
+    id key = [NSNumber numberWithInteger:indexPath.row];
+    [_selection setValue:[NSNumber numberWithBool:!selected] forKey: key];
 }
 
 
