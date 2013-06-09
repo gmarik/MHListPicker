@@ -30,17 +30,6 @@
     return self;
 }
 
--(NSMutableDictionary *)selectionFromIds:(NSArray *) ids withCapacity:(NSUInteger) capacity{
-
-    NSMutableDictionary *s = [[NSMutableDictionary alloc] init];
-
-    for (NSUInteger i=0; i < ids.count; i+=1) {
-        NSString *entry_id = [ids[i] description];
-        [s setValue:[NSNumber numberWithBool: YES] forKey: entry_id];
-    }
-
-    return s;
-}
 
 #pragma mark - Table view data source
 
@@ -88,6 +77,8 @@
     [_selection setValue:[NSNumber numberWithBool:!selected] forKey:[self idForRow:indexPath.row]];
 }
 
+#pragma mark helpers
+
 -(NSString*)idForRow:(NSInteger)row {
     NSString *entry_id = [[_entries[row] lastObject] description];
     return entry_id;
@@ -98,5 +89,16 @@
     return entry_title;
 }
 
+-(NSMutableDictionary *)selectionFromIds:(NSArray *) ids withCapacity:(NSUInteger) capacity{
+
+    NSMutableDictionary *s = [[NSMutableDictionary alloc] init];
+
+    for (NSUInteger i=0; i < ids.count; i+=1) {
+        NSString *entry_id = [ids[i] description];
+        [s setValue:[NSNumber numberWithBool: YES] forKey: entry_id];
+    }
+
+    return s;
+}
 
 @end
