@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSDateFormatter (ListPickerEntries)
+@interface NSDateFormatter (MHListPicker)
 
 -(NSArray*)weekdaySymbolsForPicker;
 -(NSArray*)shortWeekdaySymbolsForPicker;

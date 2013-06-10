@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Maryan Hratson. All rights reserved.
 //
 
-#import "NSDateFormatter+ListPickerEntries.h"
+#import "NSDateFormatter+MHListPicker.h"
 
-@implementation NSDateFormatter (ListPickerEntries)
+@implementation NSDateFormatter (MHListPicker)
 
 -(NSArray *)shortWeekdaySymbolsForPicker {
     return [self symbolsForPicker:self.shortWeekdaySymbols];

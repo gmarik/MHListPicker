@@ -9,7 +9,7 @@
 #import "MHAppDelegate.h"
 
 #import "MHListPickerViewController.h"
-#import "NSDateFormatter+ListPickerEntries.h"
+#import "NSDateFormatter+MHListPicker.h"
 
 @implementation MHAppDelegate
 
