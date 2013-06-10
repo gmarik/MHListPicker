@@ -10,17 +10,17 @@
 
 @interface MHListPickerViewController : UITableViewController
 {
-    // is a list of @[id, Label] pairs
+    // set of entry ids
     NSMutableSet *_selection;
     NSArray *_entries;
     BOOL    _multiselect;
 
 }
 
+// TODO: support single selection
 -(id)initWithEntries: (NSArray*)entries
      withSelectedIds: (NSArray*) selected
-  andMultiselectable:(BOOL)multi
-        ;
+  andMultiselectable:(BOOL)multi;
 
 -(NSArray *)selection;
 
