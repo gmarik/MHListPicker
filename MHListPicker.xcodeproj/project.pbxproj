@@ -7,21 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9BE523A21763BE7F00642028 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BE523A11763BE7F00642028 /* UIKit.framework */; };
-		9BE523A41763BE7F00642028 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BE523A31763BE7F00642028 /* Foundation.framework */; };
-		9BE523A61763BE7F00642028 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BE523A51763BE7F00642028 /* CoreGraphics.framework */; };
-		9BE523AC1763BE7F00642028 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9BE523AA1763BE7F00642028 /* InfoPlist.strings */; };
-		9BE523AE1763BE7F00642028 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BE523AD1763BE7F00642028 /* main.m */; };
-		9BE523B21763BE7F00642028 /* MHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BE523B11763BE7F00642028 /* MHAppDelegate.m */; };
-		9BE523B41763BE7F00642028 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BE523B31763BE7F00642028 /* Default.png */; };
-		9BE523B61763BE7F00642028 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BE523B51763BE7F00642028 /* Default@2x.png */; };
-		9BE523B81763BE7F00642028 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BE523B71763BE7F00642028 /* Default-568h@2x.png */; };
-		9BE523C91763BF0500642028 /* MHListPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BE523C81763BF0500642028 /* MHListPickerViewController.m */; };
-		9BE523CC1763CA7200642028 /* NSDateFormatter+MHListPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BE523CB1763CA7200642028 /* NSDateFormatter+MHListPicker.m */; };
+		9B14B8801765E4FF0044313E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BE523AD1763BE7F00642028 /* main.m */; };
+		9B14B8811765E4FF0044313E /* MHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BE523B11763BE7F00642028 /* MHAppDelegate.m */; };
+		9B14B8821765E4FF0044313E /* MHListPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BE523C81763BF0500642028 /* MHListPickerViewController.m */; };
+		9B14B8831765E4FF0044313E /* NSDateFormatter+MHListPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BE523CB1763CA7200642028 /* NSDateFormatter+MHListPicker.m */; };
+		9B14B8851765E4FF0044313E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BE523A11763BE7F00642028 /* UIKit.framework */; };
+		9B14B8861765E4FF0044313E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BE523A31763BE7F00642028 /* Foundation.framework */; };
+		9B14B8871765E4FF0044313E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BE523A51763BE7F00642028 /* CoreGraphics.framework */; };
+		9B14B8891765E4FF0044313E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9BE523AA1763BE7F00642028 /* InfoPlist.strings */; };
+		9B14B88A1765E4FF0044313E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BE523B31763BE7F00642028 /* Default.png */; };
+		9B14B88B1765E4FF0044313E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BE523B51763BE7F00642028 /* Default@2x.png */; };
+		9B14B88C1765E4FF0044313E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BE523B71763BE7F00642028 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9BE5239E1763BE7F00642028 /* MHListPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHListPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B14B8901765E5000044313E /* MHListPicker copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MHListPicker copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B14B8911765E5000044313E /* MHListPicker copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MHListPicker copy-Info.plist"; path = "/Users/gmarik/src/MHListPicker/MHListPicker copy-Info.plist"; sourceTree = "<absolute>"; };
 		9BE523A11763BE7F00642028 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9BE523A31763BE7F00642028 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9BE523A51763BE7F00642028 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -41,13 +42,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9BE5239B1763BE7F00642028 /* Frameworks */ = {
+		9B14B8841765E4FF0044313E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BE523A21763BE7F00642028 /* UIKit.framework in Frameworks */,
-				9BE523A41763BE7F00642028 /* Foundation.framework in Frameworks */,
-				9BE523A61763BE7F00642028 /* CoreGraphics.framework in Frameworks */,
+				9B14B8851765E4FF0044313E /* UIKit.framework in Frameworks */,
+				9B14B8861765E4FF0044313E /* Foundation.framework in Frameworks */,
+				9B14B8871765E4FF0044313E /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,13 +61,14 @@
 				9BE523A71763BE7F00642028 /* MHListPicker */,
 				9BE523A01763BE7F00642028 /* Frameworks */,
 				9BE5239F1763BE7F00642028 /* Products */,
+				9B14B8911765E5000044313E /* MHListPicker copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
 		9BE5239F1763BE7F00642028 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9BE5239E1763BE7F00642028 /* MHListPicker.app */,
+				9B14B8901765E5000044313E /* MHListPicker copy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,21 +114,21 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9BE5239D1763BE7F00642028 /* MHListPicker */ = {
+		9B14B87E1765E4FF0044313E /* MHListPicker Demo App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9BE523C41763BE7F00642028 /* Build configuration list for PBXNativeTarget "MHListPicker" */;
+			buildConfigurationList = 9B14B88D1765E4FF0044313E /* Build configuration list for PBXNativeTarget "MHListPicker Demo App" */;
 			buildPhases = (
-				9BE5239A1763BE7F00642028 /* Sources */,
-				9BE5239B1763BE7F00642028 /* Frameworks */,
-				9BE5239C1763BE7F00642028 /* Resources */,
+				9B14B87F1765E4FF0044313E /* Sources */,
+				9B14B8841765E4FF0044313E /* Frameworks */,
+				9B14B8881765E4FF0044313E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = MHListPicker;
+			name = "MHListPicker Demo App";
 			productName = MHListPicker;
-			productReference = 9BE5239E1763BE7F00642028 /* MHListPicker.app */;
+			productReference = 9B14B8901765E5000044313E /* MHListPicker copy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -151,34 +153,34 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9BE5239D1763BE7F00642028 /* MHListPicker */,
+				9B14B87E1765E4FF0044313E /* MHListPicker Demo App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9BE5239C1763BE7F00642028 /* Resources */ = {
+		9B14B8881765E4FF0044313E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BE523AC1763BE7F00642028 /* InfoPlist.strings in Resources */,
-				9BE523B41763BE7F00642028 /* Default.png in Resources */,
-				9BE523B61763BE7F00642028 /* Default@2x.png in Resources */,
-				9BE523B81763BE7F00642028 /* Default-568h@2x.png in Resources */,
+				9B14B8891765E4FF0044313E /* InfoPlist.strings in Resources */,
+				9B14B88A1765E4FF0044313E /* Default.png in Resources */,
+				9B14B88B1765E4FF0044313E /* Default@2x.png in Resources */,
+				9B14B88C1765E4FF0044313E /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9BE5239A1763BE7F00642028 /* Sources */ = {
+		9B14B87F1765E4FF0044313E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BE523AE1763BE7F00642028 /* main.m in Sources */,
-				9BE523B21763BE7F00642028 /* MHAppDelegate.m in Sources */,
-				9BE523C91763BF0500642028 /* MHListPickerViewController.m in Sources */,
-				9BE523CC1763CA7200642028 /* NSDateFormatter+MHListPicker.m in Sources */,
+				9B14B8801765E4FF0044313E /* main.m in Sources */,
+				9B14B8811765E4FF0044313E /* MHAppDelegate.m in Sources */,
+				9B14B8821765E4FF0044313E /* MHListPickerViewController.m in Sources */,
+				9B14B8831765E4FF0044313E /* NSDateFormatter+MHListPicker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +198,28 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9B14B88E1765E4FF0044313E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MHListPicker/MHListPicker-Prefix.pch";
+				INFOPLIST_FILE = "MHListPicker copy-Info.plist";
+				PRODUCT_NAME = "MHListPicker copy";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9B14B88F1765E4FF0044313E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MHListPicker/MHListPicker-Prefix.pch";
+				INFOPLIST_FILE = "MHListPicker copy-Info.plist";
+				PRODUCT_NAME = "MHListPicker copy";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		9BE523C21763BE7F00642028 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -254,45 +278,23 @@
 			};
 			name = Release;
 		};
-		9BE523C51763BE7F00642028 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MHListPicker/MHListPicker-Prefix.pch";
-				INFOPLIST_FILE = "MHListPicker/MHListPicker-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		9BE523C61763BE7F00642028 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MHListPicker/MHListPicker-Prefix.pch";
-				INFOPLIST_FILE = "MHListPicker/MHListPicker-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9B14B88D1765E4FF0044313E /* Build configuration list for PBXNativeTarget "MHListPicker Demo App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B14B88E1765E4FF0044313E /* Debug */,
+				9B14B88F1765E4FF0044313E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9BE523991763BE7F00642028 /* Build configuration list for PBXProject "MHListPicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9BE523C21763BE7F00642028 /* Debug */,
 				9BE523C31763BE7F00642028 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9BE523C41763BE7F00642028 /* Build configuration list for PBXNativeTarget "MHListPicker" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9BE523C51763BE7F00642028 /* Debug */,
-				9BE523C61763BE7F00642028 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
