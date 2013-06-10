@@ -37,8 +37,8 @@
 		9BE523B71763BE7F00642028 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		9BE523C71763BF0500642028 /* MHListPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHListPickerViewController.h; sourceTree = "<group>"; };
 		9BE523C81763BF0500642028 /* MHListPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHListPickerViewController.m; sourceTree = "<group>"; };
-		9BE523CA1763CA7200642028 /* NSDateFormatter+MHListPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDateFormatter+MHListPicker.h"; path = "../NSDateFormatter+MHListPicker.h"; sourceTree = "<group>"; };
-		9BE523CB1763CA7200642028 /* NSDateFormatter+MHListPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDateFormatter+MHListPicker.m"; path = "../NSDateFormatter+MHListPicker.m"; sourceTree = "<group>"; };
+		9BE523CA1763CA7200642028 /* NSDateFormatter+MHListPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+MHListPicker.h"; sourceTree = "<group>"; };
+		9BE523CB1763CA7200642028 /* NSDateFormatter+MHListPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+MHListPicker.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +55,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B14B8D21765E7810044313E /* MHListPicker */ = {
+			isa = PBXGroup;
+			children = (
+				9BE523C71763BF0500642028 /* MHListPickerViewController.h */,
+				9BE523C81763BF0500642028 /* MHListPickerViewController.m */,
+			);
+			path = MHListPicker;
+			sourceTree = "<group>";
+		};
 		9BE523951763BE7F00642028 = {
 			isa = PBXGroup;
 			children = (
-				9BE523A71763BE7F00642028 /* MHListPicker */,
+				9BE523CA1763CA7200642028 /* NSDateFormatter+MHListPicker.h */,
+				9BE523CB1763CA7200642028 /* NSDateFormatter+MHListPicker.m */,
+				9B14B8D21765E7810044313E /* MHListPicker */,
+				9BE523A71763BE7F00642028 /* MHListPicker Demo App */,
+				9BE523A81763BE7F00642028 /* Supporting Files */,
 				9BE523A01763BE7F00642028 /* Frameworks */,
 				9BE5239F1763BE7F00642028 /* Products */,
 				9B14B8911765E5000044313E /* MHListPicker copy-Info.plist */,
@@ -83,17 +96,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		9BE523A71763BE7F00642028 /* MHListPicker */ = {
+		9BE523A71763BE7F00642028 /* MHListPicker Demo App */ = {
 			isa = PBXGroup;
 			children = (
 				9BE523B01763BE7F00642028 /* MHAppDelegate.h */,
 				9BE523B11763BE7F00642028 /* MHAppDelegate.m */,
-				9BE523C71763BF0500642028 /* MHListPickerViewController.h */,
-				9BE523C81763BF0500642028 /* MHListPickerViewController.m */,
-				9BE523CA1763CA7200642028 /* NSDateFormatter+MHListPicker.h */,
-				9BE523CB1763CA7200642028 /* NSDateFormatter+MHListPicker.m */,
-				9BE523A81763BE7F00642028 /* Supporting Files */,
 			);
+			name = "MHListPicker Demo App";
 			path = MHListPicker;
 			sourceTree = "<group>";
 		};
@@ -109,6 +118,7 @@
 				9BE523B71763BE7F00642028 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			path = MHListPicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
