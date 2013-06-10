@@ -84,13 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9B14B8D21765E7810044313E /* MHListPicker */ = {
+		9B14B8D21765E7810044313E /* StaticLibrary */ = {
 			isa = PBXGroup;
 			children = (
 				9BE523C71763BF0500642028 /* MHListPickerViewController.h */,
 				9BE523C81763BF0500642028 /* MHListPickerViewController.m */,
 				9B14B8DA1765E8280044313E /* Supporting Files */,
 			);
+			name = StaticLibrary;
 			path = MHListPicker;
 			sourceTree = "<group>";
 		};
@@ -107,7 +108,7 @@
 			children = (
 				9BE523CA1763CA7200642028 /* NSDateFormatter+MHListPicker.h */,
 				9BE523CB1763CA7200642028 /* NSDateFormatter+MHListPicker.m */,
-				9B14B8D21765E7810044313E /* MHListPicker */,
+				9B14B8D21765E7810044313E /* StaticLibrary */,
 				9BE523A71763BE7F00642028 /* MHListPicker Demo App */,
 				9BE523A01763BE7F00642028 /* Frameworks */,
 				9BE5239F1763BE7F00642028 /* Products */,
@@ -179,9 +180,9 @@
 			productReference = 9B14B8901765E5000044313E /* MHListPicker copy.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9B14B8D61765E8280044313E /* MHListPicker */ = {
+		9B14B8D61765E8280044313E /* StaticLibrary */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9B14B8E01765E8280044313E /* Build configuration list for PBXNativeTarget "MHListPicker" */;
+			buildConfigurationList = 9B14B8E01765E8280044313E /* Build configuration list for PBXNativeTarget "StaticLibrary" */;
 			buildPhases = (
 				9B14B8D31765E8280044313E /* Sources */,
 				9B14B8D41765E8280044313E /* Frameworks */,
@@ -191,7 +192,7 @@
 			);
 			dependencies = (
 			);
-			name = MHListPicker;
+			name = StaticLibrary;
 			productName = MHListPicker;
 			productReference = 9B14B8D71765E8280044313E /* libMHListPicker.a */;
 			productType = "com.apple.product-type.library.static";
@@ -219,7 +220,7 @@
 			projectRoot = "";
 			targets = (
 				9B14B87E1765E4FF0044313E /* MHListPicker Demo App */,
-				9B14B8D61765E8280044313E /* MHListPicker */,
+				9B14B8D61765E8280044313E /* StaticLibrary */,
 			);
 		};
 /* End PBXProject section */
@@ -389,7 +390,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9B14B8E01765E8280044313E /* Build configuration list for PBXNativeTarget "MHListPicker" */ = {
+		9B14B8E01765E8280044313E /* Build configuration list for PBXNativeTarget "StaticLibrary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9B14B8E11765E8280044313E /* Debug */,
