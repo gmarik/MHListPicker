@@ -84,14 +84,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9B14B8D21765E7810044313E /* StaticLibrary */ = {
+		9B14B8D21765E7810044313E /* MHListPicker */ = {
 			isa = PBXGroup;
 			children = (
 				9BE523C71763BF0500642028 /* MHListPickerViewController.h */,
 				9BE523C81763BF0500642028 /* MHListPickerViewController.m */,
 				9B14B8DA1765E8280044313E /* Supporting Files */,
 			);
-			name = StaticLibrary;
 			path = MHListPicker;
 			sourceTree = "<group>";
 		};
@@ -108,7 +107,7 @@
 			children = (
 				9BE523CA1763CA7200642028 /* NSDateFormatter+MHListPicker.h */,
 				9BE523CB1763CA7200642028 /* NSDateFormatter+MHListPicker.m */,
-				9B14B8D21765E7810044313E /* StaticLibrary */,
+				9B14B8D21765E7810044313E /* MHListPicker */,
 				9BE523A71763BE7F00642028 /* MHListPicker Demo App */,
 				9BE523A01763BE7F00642028 /* Frameworks */,
 				9BE5239F1763BE7F00642028 /* Products */,
@@ -303,7 +302,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MHListPicker/MHListPicker-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MHListPicker;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -315,7 +314,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MHListPicker/MHListPicker-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MHListPicker;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
