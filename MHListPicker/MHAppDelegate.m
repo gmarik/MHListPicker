@@ -20,7 +20,9 @@
 
     NSArray *entries = [[[NSDateFormatter alloc] init] weekdaySymbolsForPicker];
 
-    self.window.rootViewController = [[MHListPickerViewController alloc] initWithEntries:entries withSelectedIds:@[@1, @2, @5, @7] andMultiselectable:YES];
+    MHListPickerSelectCallback block = ^(MHListPickerViewController *vc){ NSLog(@"%@", vc.selection); };
+
+    self.window.rootViewController = [[MHListPickerViewController alloc] initWithEntries:entries withSelectedIds:@[@1, @2, @5, @7] andMultiselectable:YES withSelectionBlock: block ];
     [self.window makeKeyAndVisible];
     return YES;
 }

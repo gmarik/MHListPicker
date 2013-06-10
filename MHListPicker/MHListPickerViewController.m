@@ -16,11 +16,13 @@
 
 -(id)initWithEntries: (NSArray *) entries
      withSelectedIds: (NSArray *) selected
-  andMultiselectable:(BOOL) multi {
+  andMultiselectable:(BOOL) multi
+  withSelectionBlock:(MHListPickerSelectCallback ) block {
 
     self = [super initWithStyle:UITableViewStyleGrouped];
     
     if (self) {
+        _selectionBlock = block;
         _entries = entries;
         _multiselect = multi;
         _selection = [self selectionFromIds: selected withCapacity: _entries.count ];
@@ -93,7 +95,10 @@
     
     cell.accessoryType = selected ? UITableViewCellAccessoryNone : UITableViewCellAccessoryCheckmark;
 
-//    NSLog(@"%@", [self selection]);
+    if (_selectionBlock) {
+        _selectionBlock(self);
+    }
+
 }
 
 #pragma mark helpers
